@@ -13,10 +13,12 @@
 //
 // No hints this time ;)
 
-// I AM NOT DONE
 
 // Put your function here!
-// fn calculate_price_of_apples {
+fn calculate_price_of_apples(order: u32) -> u32 {
+    (order <= 40).then(|| order * 2).unwrap_or_else(|| order)
+}
+
 
 // Don't modify this function!
 #[test]
