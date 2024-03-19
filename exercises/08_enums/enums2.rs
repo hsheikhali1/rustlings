@@ -6,9 +6,9 @@
 #[derive(Debug)]
 enum Message {
     // TODO: define the different variants used below
-    Move { x: u8, y: u8 },
+    Move { x: u16, y: u16 },
     Echo(String),
-    ChangeColor(u8, u8, u8),
+    ChangeColor(u16, u16, u16),
     Quit,
 }
 
